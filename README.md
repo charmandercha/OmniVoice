@@ -1,6 +1,7 @@
+
 Este projeto é um sistema de reconhecimento de comandos de voz que executa ações com base em um arquivo JSON. Ele permite a navegação hierárquica entre modos e suporta a extensão de funcionalidades através de plugins em Python.
 
-Como Funciona
+**Como Funciona**
 
     Reconhecimento de Voz: O sistema escuta o áudio do usuário e compara com os comandos definidos em um arquivo JSON.
 
@@ -8,32 +9,32 @@ Como Funciona
 
     Plugins: Comandos personalizados podem ser adicionados através de funções em Python.
 
-1. Adicionar Comandos
+**1. Adicionar Comandos**
 
 Edite o arquivo comandos.json para adicionar novos comandos ou modos. Exemplo:
 
-{
-  "Modo Jogo": {
-    "comandos": {
-      "iniciar jogo": "comando_iniciar_jogo",
-      "fechar jogo": "comando_fechar_jogo"
+    {
+      "Modo Jogo": {
+        "comandos": {
+          "iniciar jogo": "comando_iniciar_jogo",
+          "fechar jogo": "comando_fechar_jogo"
+        }
+      }
     }
-  }
-}
 
 
-2. Adicionar Plugins
+**2. Adicionar Plugins**
 
 Crie funções em Python e registre-as no sistema. Exemplo (busca.py):
 
-def search_For(texto):
-    return f"You will do something with this: {texto}"
+    def search_For(texto):
+        return f"You will do something with this: {texto}"
 
-3. Executar o Sistema
+**3. Executar o Sistema**
 
 Use o script start.sh para iniciar o sistema:
 
-./start.sh
+    ./start.sh
 
 
 projeto/
@@ -46,7 +47,7 @@ projeto/
     └── meu_plugin.py      # Exemplo de plugin
 
 
-    Requisitos
+   **Requisitos**
 
     Python 3.x
 
@@ -55,4 +56,5 @@ projeto/
 Instale as dependências com:
 
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
+

@@ -19,7 +19,7 @@ class FSM:
     def __init__(self, comandos_file: str, estado_salvo_file: str = 'estado_atual.json'):
         self.estado_salvo_file = estado_salvo_file
         self.caminho_atual: List[str] = []
-        self.pasta = estado_salvo_file['diretorio_atual']
+        # self.pasta = estado_salvo_file['diretorio_atual']
         self.executavel = False
 
         self.debug = True

@@ -1,0 +1,63 @@
+{
+    "comandos": {
+        "modo youtube": {
+            "tipo": "container",
+            "descricao": "Modo para controlar o YouTube",
+            "comandos": {
+                "modo busca": {
+                    "tipo": "container",
+                    "descricao": "Modo para capturar strings de busca",
+                    "funcao": "busca.buscar_no_youtube" 
+                },
+                "pesquisar": {
+                    "tipo": "executavel",
+                    "descricao": "Pesquisa no YouTube",
+                    "comando": "xdg-open https://www.youtube.com/results?search_query=SEARCH_QUERY"
+                }
+               
+            }
+        },
+        "modo jogo": {
+            "tipo": "container",
+            "descricao": "Modo para controlar jogos na Steam",
+            "comandos": {
+                "abrir steam": {
+                    "tipo": "executavel",
+                    "descricao": "Abre a Steam",
+                    "comando": "steam"
+                },
+                "don't starve": {
+                    "tipo": "executavel",
+                    "descricao": "Abrindo jogo dont starve",
+                    "comando": "steam steam://rungameid/322330 &"
+                },
+                "foguetinho": {
+                    "tipo": "executavel",
+                    "descricao": "Abrindo jogo rocket league",
+                    "comando": "steam steam://rungameid/252950 &"
+                },
+                "trabalho": {
+                    "tipo": "executavel",
+                    "descricao": "Ligando o monitor",
+                    "comando": "xrandr --output DisplayPort-2 --mode 2560x1080 --primary --output HDMI-A-0 --off"
+                },
+                "televisao": {
+                    "tipo": "executavel",
+                    "descricao": "Ligando a televisao",
+                    "comando": "xrandr --output HDMI-A-0 --mode 1920x1080 --primary --output DisplayPort-2 --off"
+                },
+                "modo busca": {
+                    "tipo": "container",
+                    "descricao": "Modo para capturar strings de busca",
+                    "funcao": "busca.buscar_no_youtube",
+                    "executavel": true,
+                    "comandos": {}
+                }
+                
+            }
+            
+        }
+        
+        }
+    }
+  
